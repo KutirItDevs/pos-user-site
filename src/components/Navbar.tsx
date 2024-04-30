@@ -17,6 +17,7 @@ import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import { LogoIcon } from "./Icons";
+import { AppName } from "@/constant/AppName";
 
 interface RouteProps {
   href: string;
@@ -78,7 +79,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+                    {AppName.title}
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -93,7 +94,7 @@ export const Navbar = () => {
                     </a>
                   ))}
                   <a
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+                    href="https://github.com/Munna-Khandakar"
                     target="_blank"
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",
@@ -124,7 +125,7 @@ export const Navbar = () => {
 
           <div className="hidden md:flex gap-2">
             <a
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+              href="https://github.com/Munna-Khandakar"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
